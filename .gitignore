@@ -6,7 +6,7 @@
 
 # idea file
 .idea
-*.imi
+*.iml
 
 # Package Files #
 *.jar
