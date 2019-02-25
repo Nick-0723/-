@@ -63,4 +63,17 @@ public class Reverse {
 
         return fu ? - (int)res : (int)res;
     }
+
+    public static int solution2(int x) {
+        long res = 0;
+        while (x != 0) {
+            long pop = x % 10;
+            x /= 10;
+            res = res * 10 + pop;
+        }
+        if (res > 2147483647 || res < -2147483648) {
+            return 0;
+        }
+        return (int)res;
+    }
 }
